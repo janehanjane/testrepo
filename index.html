@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주 바람 게스트하우스</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #333; line-height: 1.7; }
+
+    header {
+      background: #1a7a5e;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.85; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      background: #145c47;
+      padding: 14px 20px;
+    }
+    nav a { color: white; text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { text-decoration: underline; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+
+    h2 { font-size: 1.5rem; color: #1a7a5e; margin-bottom: 24px; }
+
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+    .room {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+    .room .emoji { font-size: 2rem; }
+    .room h3 { margin: 10px 0 6px; }
+    .room .price { color: #1a7a5e; font-weight: bold; margin-top: 10px; }
+
+    .amenities { background: #f5f5f0; }
+    .amenity-list { list-style: none; }
+    .amenity-list li { padding: 6px 0; }
+    .amenity-list li::before { content: "✓ "; color: #1a7a5e; font-weight: bold; }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 제주 바람 게스트하우스</h1>
+  <p>제주의 자연 속에서 편안한 하룻밤</p>
+</header>
+
+<nav>
+  <a href="#rooms">객실</a>
+  <a href="#amenities">편의시설</a>
+  <a href="#contact">예약 문의</a>
+</nav>
+
+<div class="container" id="rooms">
+  <h2>객실 안내</h2>
+  <div class="rooms">
+    <div class="room">
+      <div class="emoji">🛏</div>
+      <h3>도미토리</h3>
+      <p>4인 혼성 도미토리</p>
+      <p class="price">25,000원 / 박</p>
+    </div>
+    <div class="room">
+      <div class="emoji">🛎</div>
+      <h3>트윈룸</h3>
+      <p>2인실 · 전용 화장실</p>
+      <p class="price">70,000원 / 박</p>
+    </div>
+    <div class="room">
+      <div class="emoji">🌅</div>
+      <h3>더블룸</h3>
+      <p>커플 · 가족 전용</p>
+      <p class="price">80,000원 / 박</p>
+    </div>
+  </div>
+</div>
+
+<div class="amenities">
+  <div class="container" id="amenities">
+    <h2>편의시설</h2>
+    <ul class="amenity-list">
+      <li>무료 Wi-Fi</li>
+      <li>공용 주방 및 라운지</li>
+      <li>자전거 대여</li>
+      <li>체크인 15:00 / 체크아웃 11:00</li>
+    </ul>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>예약 문의</h2>
+  <p>📞 010-1234-5678</p>
+  <p>📧 hello@jejuwind.kr</p>
+  <p>📍 제주특별자치도 제주시 연동 000-0</p>
+</div>
+
+<footer>
+  <p>&copy; 2026 제주 바람 게스트하우스</p>
+</footer>
+
+</body>
+</html>
